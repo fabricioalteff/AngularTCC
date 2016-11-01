@@ -1,5 +1,6 @@
-angular.module("superCompras").controller("mainCtrl", function($scope) {
-  $scope.app="Super Compras";
+angular.module("superCompras").controller("loginCtrl", function($scope) {
+  	$scope.app="Super Compras";
+  	console.log("está funcionando LOGIN");
 
 
 });

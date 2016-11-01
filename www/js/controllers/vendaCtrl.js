@@ -1,7 +1,6 @@
-angualar.module('superCompras').controller('salesCtrl', function ($scope) {
+angular.module("superCompras").controller("vendaCtrl", function($scope) {
+  	$scope.app="Super Compras";
+  	console.log("está funcionando VENDA");
 
-  $scope.prodVenda = [
-    {"ean": },
-  ]
 
 });
