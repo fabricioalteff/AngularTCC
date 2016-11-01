@@ -1,0 +1,188 @@
+body{
+  margin: 0px;
+}
+
+.mainView{
+  margin-left: auto;
+  margin-right: auto;
+  width: 408px;
+  background-color: #990000;
+}
+
+.mainView h1{
+  font-size: 25px;
+  color: white;
+}
+.viewLogin{
+  background-color: #990000;
+  width: 300px;
+  height: 300px;
+  margin-top: auto;
+  margin-left: auto;
+  float: left;
+
+
+
+}
+.saleView{
+  margin: 0px;
+  padding: 0px;
+}
+
+.saleView ul{
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid white;
+}
+
+.saleView ul li{
+  list-style-type:none !important;
+  margin-left: 0px;
+}
+
+.content-prod{
+  margin-left: auto;
+  margin-right: auto;
+  width: 408px;
+  height: 80px;
+}
+
+.img-prod{
+  width: 70px;
+  height: 70px;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  float: left;
+}
+
+.info-prod{
+  width: 180px;
+  height: 70px;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid white;
+  border-radius: 4px;
+  position: relative;
+  float: left;
+}
+
+.title-prod{
+  width: 100%;
+  height: 48px;
+  position: relative;
+  float: left;
+}
+
+.title-prod h3{
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 4px;
+  color: white;
+}
+
+.ean-prod{
+  width: 100%;
+  height: 18px;
+  position: relative;
+  float: left;
+}
+
+.ean-prod p{
+  font-size: 9px;
+  margin-left: 4px;
+  margin-top: 4px;
+  float: left;
+  position: relative;
+  color: white;
+}
+
+.price-prod{
+  width: 90px;
+  height: 70px;
+  margin-top: 4px;
+  margin-left: 4px;
+  float: left;
+  border: 1px solid white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.price-prod p{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 4px;
+  margin-right: 4px;
+  float: right;
+  color: white;
+    }
+
+.price-unit-prod{
+  width: 100%;
+  height: 33px;
+  position: relative;
+}
+
+.price-total-prod{
+  width: 100%;
+  height: 33px;
+  position: relative;
+}
+
+.qty{
+  width: 40px;
+  height: 70px;
+  margin-top: 4px;
+  margin-left: 4px;
+  float: left;
+  position: relative;
+}
+
+.qty-prod{
+  width: 100%;
+  height: 26px;
+  float: left;
+  position: relative;
+}
+
+
+.qty-prod p{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  float: left;
+  position: relative;
+  border: 1px solid white;
+  margin: 0px;
+}
+
+.qty-up-down{
+  width: 18px;
+  height: 18px;
+  float: left;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-left: 9px;
+}
+
+.qty-up-down p{
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  float: left;
+  margin: 0px;
+  margin-left: 5px;
+  margin-top: -2px
+
+
+}

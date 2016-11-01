@@ -1,0 +1,55 @@
+<div class="saleView" ng-controller='produtosCtrl'>
+    <ul>
+        <li ng-repeat='produto in produtos'>
+            <div class="content-prod">
+
+                <div class="img-prod">
+                    <img src="img/produtos/{{produto.ean}}.jpg" alt="" />
+                </div>
+
+                <div class="info-prod">
+                    <div class="title-prod">
+                        <h3>{{produto.nome}}</h3>
+                    </div>
+                    <div class="ean-prod">
+                        <p>
+                            Cod. Barras:
+                        </p>
+                        <p>
+                            {{produto.ean}}
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="price-prod">
+                    <div class="price-unit-prod">
+                        <p>R$ {{produto.preco}}</p>
+                    </div>
+                    <div class="price-total-prod">
+                        <p>R$ {{produto.preco}}</p>
+                    </div>
+
+                </div>
+                <div class="qty">
+                    <div class="qty-up-down">
+                      <p>+</p>
+                    </div>
+                    <div class="qty-prod">
+                      <p>
+                        {{produto.qtd}}
+                      </p>
+                    </div>
+                    <div class="qty-up-down">
+                      <p>-</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </li>
+
+    </ul>
+
+</div>
