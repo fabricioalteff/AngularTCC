@@ -1,13 +1,13 @@
-var spa = angular.module('superCompras', ['ngRoute']);
+var spa = angular.module('superCompras', ['ngRoute', 'whimsicalRipple']);
 
 spa.config(function($routeProvider){
     $routeProvider
     .when('/', {
-        templateUrl: '../templates/login.html',
+        templateUrl: './domains/login/login.html',
         controller: 'loginCtrl'
     })
     .when('/venda', {
-        templateUrl: '../templates/venda.html',
+        templateUrl: './domains/venda/venda.html',
         controller: 'vendaCtrl'
     })   
     .otherwise({ redirectTo: '/'});

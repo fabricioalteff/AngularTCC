@@ -9,6 +9,19 @@ body {
     -webkit-user-select: none;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
-    width:100%;
+    font-family: 'DroidSans', sans-serif;    
+}
+
+@font-face {
+     font-family: DroidSans;
+     src: local(../assets/fonts/DroidSans.ttf);
+}
+
+a{
+	text-decoration:none; 
+}
+
+.w3-card, .w3-card-2, .w3-card-4, .w3-card-8, .w3-card-12, .w3-card-16, .w3-card-24{
+
+    background-color: #FFF !important;
 }

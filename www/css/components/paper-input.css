@@ -1,0 +1,80 @@
+.paper-input {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.-marginSmall {
+    margin-top: 0px;
+}
+
+input {
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    box-sizing: border-box;
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 20px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -13px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.paper-input > .bar {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+.paper-input > .bar:before, .paper-input > .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #2196F3;
+}
+
+.paper-input > .bar:before {
+    left: 50%;
+}
+
+.paper-input > .bar:after {
+    right: 50%;
+}
+
+.paper-input > input:focus ~ .bar:before, .paper-input > input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.paper-input > .invalido {
+	color: #FF0000 !important;
+}
+
+.paper-input > .invalido:before, .invalido:after {
+	background: #FF0000 !important;
+}
+
