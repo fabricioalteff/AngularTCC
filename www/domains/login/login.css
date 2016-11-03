@@ -2,11 +2,78 @@
 	width: 100%;
 	min-height: 100vh;
 	top: 0px !important;
-	background-color: #FF0000;
+	background: #4CAF50;
+  	background: -webkit-linear-gradient(#4CAF50, #00BCD4);
+  	background: -o-linear-gradient(#4CAF50, #00BCD4);
+  	background: -moz-linear-gradient(#4CAF50, #00BCD4);
+  	background: linear-gradient(#4CAF50, #00BCD4);
 }
 
 .login-card{
-	width: 500px;
-
+	position: relative;
+	top: 20vh;
 	margin: auto;
+}
+
+.w3-btn-block {
+	color: #FFF !important;
+}
+
+.w3-container{
+	min-height: 100vh !important;
+}
+
+.linkRecuperarSenha{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #23b696;
+	text-align: center;
+	font-size: 1em;
+}
+
+.linkRegistrar{
+	position: relative;
+	top: 25vh;
+	text-align: center;
+	font-size: 1.2em !important;
+	color: white;
+}
+.negrito{
+	font-weight: bold;
+}
+
+@media screen and (max-width: 399px) {
+
+	.login-card{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-height: 400px){
+
+	.login-card{
+		top: 5vh !important;
+	}
+
+	.linkRegistrar{
+		top: 5vh !important;
+	}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px){
+
+	.login-card{
+		width: 70%;
+	}
+
+}
+
+@media screen and (min-width: 600px){
+
+	.login-card{
+		width: 350px;
+	}
+
 }
