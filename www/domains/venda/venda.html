@@ -24,6 +24,10 @@
 
 
                 <div class="price-prod">
+                  <div class="qty-prod">
+                  <input type="number" name="qty" value="{{produto.qtd}}">
+
+                  </div>
                     <div class="price-unit-prod">
                         <p>R$ {{produto.preco}}</p>
                     </div>
@@ -33,7 +37,7 @@
 
                 </div>
                 <div class="qty">
-                    <div class="qty-buton up ripple ripple-darc">
+                    <div class="qty-buton up ripple ripple-darc" onclick=" return adicionarItem()">
                       <img src="img/ic_add.svg" alt="Adiciona" />
                     </div>
 
