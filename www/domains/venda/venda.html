@@ -32,16 +32,16 @@
                         <p>R$ {{produto.preco}}</p>
                     </div>
                     <div class="price-total-prod">
-                        <p>R$ {{produto.preco}}</p>
+                        <p>R$ {{produto.preco*produto.qtd}}</p>
                     </div>
 
                 </div>
                 <div class="qty">
-                    <div class="qty-buton up ripple ripple-darc" onclick=" return adicionarItem()">
+                    <div class="qty-buton up ripple ripple-darc" ng-click="adicionarProduto($index)">
                       <img src="img/ic_add.svg" alt="Adiciona" />
                     </div>
 
-                    <div class="qty-buton down ripple ripple-darc">
+                    <div class="qty-buton down ripple ripple-darc" ng-click="removerProduto($index)">
                       <img src="img/ic_remove.svg" alt="Remove" />
                     </div>
 
