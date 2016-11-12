@@ -1,8 +1,17 @@
 <section id="venda">
+
   <div class="saleView" ng-controller='vendaCtrl'>
-    <ul>
-        <li ng-repeat='produto in produtos'>
-            <div class="content-prod">
+    <header class="barra-menu">
+      <div>
+        <div class="icone">
+          <img src="img/menu.svg"/>
+
+        </div>
+
+      </div>
+    </header>
+
+            <div class="content-prod"  ng-repeat='produto in produtos'>
 
                 <div class="img-prod">
                     <img src="img/produtos/{{produto.ean}}.jpg" alt="" />
@@ -38,20 +47,20 @@
                 </div>
                 <div class="qty">
                     <div class="qty-buton up ripple ripple-darc" ng-click="adicionarProduto($index)">
-                      <img src="img/ic_add.svg" alt="Adiciona" />
+
                     </div>
 
                     <div class="qty-buton down ripple ripple-darc" ng-click="removerProduto($index)">
-                      <img src="img/ic_remove.svg" alt="Remove" />
+
                     </div>
 
                 </div>
 
 
             </div>
-        </li>
 
-    </ul>
+
+
 
 </div>
 
