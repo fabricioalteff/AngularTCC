@@ -200,3 +200,102 @@ input[type=number]::-webkit-inner-spin-button {
   border-top:1px solid #12a5ce;
 
 }
+
+
+
+
+.produto{
+  height: 80px;
+  background-color: #FFF;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.produto > .imagem{
+
+  height: 100%;
+  background-color: #F00;
+  float: left;
+
+}
+
+.produto > .descricao{
+  height: 100%;
+  background-color: #FF0;
+
+  float: left;
+}
+
+.produto > .valor{
+
+  height: 100%;
+  background-color: #0FF;
+  float: left;
+
+}
+
+
+@media screen and (max-width: 399px) {
+
+  .produto{
+      width: 95%;
+  }
+
+  .produto > .imagem{
+      width: 20%;
+  }
+
+  .produto > .descricao{
+    width: 60%;
+  }
+
+  .produto > .valor{
+    width: 20%;
+  }
+
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px) {
+
+  .produto{
+      width: 80%;
+  }
+
+  .produto > .imagem{
+      width: 10%;
+  }
+
+  .produto > .descricao{
+    width: 70%;
+  }
+
+  .produto > .valor{
+    width: 20%;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .produto{
+      width: 500px;
+  }
+
+  .produto > .imagem{
+
+  }
+
+  .produto > .descricao{
+
+  }
+
+  .produto > .valor{
+
+  }
+
+
+}
