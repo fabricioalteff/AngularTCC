@@ -1,86 +1,63 @@
 <section id="venda">
 
-  <div class="saleView" ng-controller='vendaCtrl'>
-    <header class="barra-menu">
-      <div>
-        <div class="icone">
-          <img src="img/menu.svg"/>
+    <div class="saleView" ng-controller='vendaCtrl'>
+        <header class="barra-menu">
+            <div>
+                <div class="icone">
 
-        </div>
+                </div>
 
-      </div>
-    </header>
+            </div>
+        </header>
 
-            <div class="content-prod"  ng-repeat='produto in produtos'>
+        <div class="content-prod" ng-repeat='produto in produtos'>
 
-                <div class="img-prod">
+            <div class="img-prod">
+                <div class="img">
+
                     <img src="img/produtos/{{produto.ean}}.jpg" alt="" />
                 </div>
+            </div>
 
-                <div class="info-prod">
-                    <div class="title-prod">
-                        <h3>{{produto.nome}}</h3>
-                    </div>
-                    <div class="ean-prod">
-                        <p>
-                            Cod. Barras:
-                        </p>
-                        <p>
-                            {{produto.ean}}
-                        </p>
-                    </div>
+            <div class="info-prod">
+                <div class="title-prod">
+                    <h3>{{produto.nome}}</h3>
                 </div>
+                <div class="ean-prod">
+                    <p>
+                        {{produto.ean}}
+                    </p>
+                </div>
+            </div>
 
 
-                <div class="price-prod">
-                  <div class="qty-prod">
-                  <input type="number" name="qty" ng-model="produto.qtd">
-
-                  </div>
-                    <div class="price-unit-prod">
-                        <p>R$ {{produto.preco}}</p>
-                    </div>
-                    <div class="price-total-prod">
-                        <p>R$ {{produto.preco*produto.qtd}}</p>
-                    </div>
+            <div class="price-prod">
+                <div class="qty-prod">
+                    <input type="number" name="qty" ng-model="produto.qtd">
 
                 </div>
-                <div class="qty">
-                    <div class="qty-buton up ripple ripple-darc" ng-click="adicionarProduto($index)">
+                <div class="price-unit-prod">
+                    <p>R$ {{produto.preco}}</p>
+                </div>
+                <div class="price-total-prod">
+                    <p>R$ {{produto.preco*produto.qtd}}</p>
+                </div>
 
-                    </div>
-
-                    <div class="qty-buton down ripple ripple-darc" ng-click="removerProduto($index)">
-
-                    </div>
+            </div>
+            <div class="qty">
+                <div class="qty-buton up ripple ripple-darc" ng-click="adicionarProduto($index)">
 
                 </div>
 
+                <div class="qty-buton down ripple ripple-darc" ng-click="removerProduto($index)">
+
+                </div>
 
             </div>
 
 
-
-
-</div>
-
-
-
-<div class="produto">
-  <div class="imagem">
-
-  </div>
-  <div class="descricao">
-
-  </div>
-  <div class="valor">
-
-  </div>
-</div>
-
-
-
-
+        </div>
+    </div>
 
 
 </section>

@@ -1,9 +1,12 @@
-#venda {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #4527A0;
-    position: fixed;
-    top: 0px;
+#venda{
+	width: 100%;
+	min-height: 100vh;
+	top: 0px !important;
+	background: #4CAF50;
+  	background: -webkit-linear-gradient(#4CAF50, #00BCD4);
+  	background: -o-linear-gradient(#4CAF50, #00BCD4);
+  	background: -moz-linear-gradient(#4CAF50, #00BCD4);
+  	background: linear-gradient(#4CAF50, #00BCD4);
 }
 
 .barra-menu {
@@ -17,38 +20,42 @@
 }
 
 .barra-menu div{
-	width: 408px;
 	height: 100%;
   margin: auto;
 }
 
-.icone img{
-  margin-top: 2px;
+.icone{
+  background-image: "img/menu.svg";
+  background-image: url('../../img/menu.svg');
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  background-position: left;
   margin-left: 4px;
+
 }
 
-
-.saleView ul li {
-    list-style-type: none !important;
-    margin-left: 0px;
-}
 
 .content-prod {
     margin: auto;
-    width: 408px;
+
     height: 80px;
+    background-color: #fff;
+    margin-bottom: 4px;
 }
 
 .img-prod {
-    width: 70px;
-    height: 70px;
     margin-top: 4px;
     margin-left: 4px;
-    border: 1px solid white;
-    border-radius: 4px;
-    background-color: white;
     position: relative;
     float: left;
+}
+
+.img{
+  width: 70px;
+  height: 70px;
+  border: 1px solid #f2f4f4;
+  margin: auto;
+  float: left;
 }
 
 .info-prod {
@@ -56,9 +63,7 @@
     height: 70px;
     margin-top: 4px;
     margin-left: 4px;
-    border: 1px solid white;
-    border-radius: 4px;
-    background-color: white;
+    background-color: #f2f4f4;
     position: relative;
     float: left;
 }
@@ -101,9 +106,7 @@
     margin-top: 4px;
     margin-left: 4px;
     float: left;
-    border: 1px solid white;
-    border-radius: 4px;
-    background-color: white;
+    background-color: #f2f4f4;
     position: relative;
 }
 
@@ -139,7 +142,7 @@
 }
 
 .qty-prod {
-    width: 35px;
+    width: 44px;
     height: 68px;
     margin-left: 4px;
     float: left;
@@ -168,12 +171,13 @@ input[type=number]::-webkit-inner-spin-button {
     width: 31px;
     height: 31px;
     position: relative;
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
     border-radius: 50%;
     box-shadow: 0 1px 1px #12a5ce;
-    -webkit-box-shadow: 0 1px 1px #12a5ce;
+    -webkit-box-shadow: 0 1px 1px #4527A0;
     -moz-box-shadow: 0 1px 1px #12a5ce;
+    margin-right: 4px;
 }
 
 .up {
@@ -192,102 +196,56 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 
+@media screen and (max-width: 499px) {
+  .barra-menu div{
+    width: 380px;
+  }
+  .content-prod{
+      width: 380px;
+  }
 
+  .content-prod > .img-prod{
+    width: 19%;
+  }
 
+  .content-prod > .info-prod{
+      width: 30%;
+  }
 
+  .content-prod > .price-prod{
+    width: 36%;
+  }
 
-.produto{
-  height: 80px;
-  background-color: #FFF;
-  border-radius: 3px;
-  margin: auto;
-}
-
-.produto > .imagem{
-
-  height: 100%;
-  background-color: #F00;
-  float: left;
-
-}
-
-.produto > .descricao{
-  height: 100%;
-  background-color: #FF0;
-
-  float: left;
-}
-
-.produto > .valor{
-
-  height: 100%;
-  background-color: #0FF;
-  float: left;
+  .content-prod > .qty{
+    width: 9%;
+  }
 
 }
 
 
-@media screen and (max-width: 399px) {
+@media screen and (min-width: 500px){
 
-  .produto{
-      width: 95%;
+  .barra-menu div{
+    width: 442px;
   }
-
-  .produto > .imagem{
-      width: 20%;
-  }
-
-  .produto > .descricao{
-    width: 60%;
-  }
-
-  .produto > .valor{
-    width: 20%;
-  }
-
-
+.content-prod{
+    width: 442px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 599px) {
-
-  .produto{
-      width: 80%;
-  }
-
-  .produto > .imagem{
-      width: 10%;
-  }
-
-  .produto > .descricao{
-    width: 70%;
-  }
-
-  .produto > .valor{
-    width: 20%;
-  }
-
-
-
+.content-prod > .img-prod{
+  width: 70px;
 }
 
+.content-prod > .info-prod{
+    width: 170px;
+}
 
-@media screen and (min-width: 600px) {
+.content-prod > .price-prod{
+  width: 150px;
+}
 
-  .produto{
-      width: 500px;
-  }
-
-  .produto > .imagem{
-
-  }
-
-  .produto > .descricao{
-
-  }
-
-  .produto > .valor{
-
-  }
-
+.content-prod > .qty{
+  width: 31px;
+}
 
 }
