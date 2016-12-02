@@ -2,11 +2,21 @@
 
     <div class="saleView" ng-controller='vendaCtrl'>
         <header class="barra-menu">
-            <div>
-                <div class="icone">
-
-                </div>
-
+            <div class="menu">
+                <md-menu>
+                    <!-- Trigger element is a md-button with an icon -->
+                    <md-button ng-click="$mdOpenMenu($event)" class="icone md-icon-button" aria-label="Open sample menu">
+                        <md-icon md-svg-icon="call:phone"></md-icon>
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <md-button ng-click="doSomething()">Escolha o Supermercado</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="doSomething()">Sair</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
             </div>
         </header>
 

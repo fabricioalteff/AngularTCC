@@ -24,13 +24,27 @@
   margin: auto;
 }
 
+@media screen and (max-width: 499px) {
+  .barra-menu > .menu{
+    width: 380px;
+  }
+}
+@media screen and (min-width: 500px){
+
+  .barra-menu > .menu{
+    width: 442px;
+  }
+}
+
+
 .icone{
-  background-image: "img/menu.svg";
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-left: 4px;
   background-image: url('../../img/menu.svg');
   background-size: 45px 45px;
   background-repeat: no-repeat;
-  background-position: left;
-  margin-left: 4px;
 
 }
 
@@ -197,9 +211,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 @media screen and (max-width: 499px) {
-  .barra-menu div{
-    width: 380px;
-  }
   .content-prod{
       width: 380px;
   }
@@ -224,10 +235,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 @media screen and (min-width: 500px){
-
-  .barra-menu div{
-    width: 442px;
-  }
 .content-prod{
     width: 442px;
 }
