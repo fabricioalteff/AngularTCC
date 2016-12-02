@@ -14,6 +14,7 @@ angular.module("superCompras").controller("vendaCtrl", function($scope, $http) {
 
     $scope.adicionarProduto = function(posicao) {
       $scope.produtos[posicao].qtd++;
+      separarProdutosSelecionados();
     }
 
     $scope.removerProduto = function(posicao) {
@@ -23,5 +24,24 @@ angular.module("superCompras").controller("vendaCtrl", function($scope, $http) {
       }
 
     }
+
+    function separarProdutosSelecionados(){
+
+      $scope.produtosSelecionados = $scope.produtos.filter(
+        function(produto){
+          return produto.qtd>0;
+        }
+      )
+
+      console.log($scope.produtosSelecionados);
+      $scope.valorTotal = $scope.produtosSelecionados.reduce(
+        function(valorAnterior, produto, index, array){
+          return valorAnterior + (produto.preco * produto.qtd)
+        },0
+      )
+      console.log($scope.valorTotal);
+    }
+
+
 
 });
