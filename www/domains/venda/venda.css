@@ -82,12 +82,13 @@
 
 
 .content-prod {
+    position: relative;
+    top:52px;
     margin: auto;
-
     height: 80px;
     background-color: #fff;
     margin-bottom: 4px;
-		box-shadow: 0 1px 1px #4527A0;
+	box-shadow: 0 1px 1px #4527A0;
     -webkit-box-shadow: 0 1px 1px #4527A0;
     -moz-box-shadow: 0 1px 1px #4527A0;
 }
